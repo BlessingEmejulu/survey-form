@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Get Into Tech survey form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Tech survey form</h1>
+            <p id="description" class="description text-center">
+                Get Into Tech (GIT) is an Initiative to help you get started
+                in your chosen career path in technology.
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Are you new in Tech?</p>
+                <label>
+                    <input name="new-in-tech" value="yes" type="radio" class="input-radio"
+                        checked />Yes</label>
+                <label>
+                    <input name="new-in-tech" value="no" type="radio" class="input-radio" />No</label>
+
+                <label><input name="new-in-tech" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Why do you want to get into tech?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="impact">Impact</option>
+                    <option value="money">Money</option>
+                    <option value="innovation">Innovation</option>
+                    <option value="diversity">Diversity</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Which of these would you like to get started in?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+
+                <label><input name="prefer" value="web-design" type="checkbox" class="input-checkbox" /> Web
+                    Design</label>
+                <label>
+                    <input name="prefer" value="product-management" type="checkbox" class="input-checkbox" />Product
+                    Managament
+                </label>
+
+                <label><input name="prefer" value="product-design" type="checkbox" class="input-checkbox" />Product
+                    Design (UI/UX Design)</label>
+                <label><input name="prefer" value="software-development" type="checkbox" class="input-checkbox" />Software
+                    Development</label>
+                <label><input name="prefer" value="digital-marketing" type="checkbox"
+                        class="input-checkbox" />Digital
+                    marketing</label>
+                <label><input name="prefer" value="graphic-design" type="checkbox" class="input-checkbox" />Graphic
+                    Design</label>
+                <label><input name="prefer" value="videos-editing" type="checkbox" class="input-checkbox" />Video
+                    Editing</label>
+                <label><input name="prefer" value="cloud-computing" type="checkbox" class="input-checkbox" />Cloud
+                    computing</label>
+                <label><input name="prefer" value="blockchain-technology" type="checkbox" class="input-checkbox" />
+                    BlockChain Technology</label>
+                <label><input name="prefer" value="project-management" type="checkbox" class="input-checkbox" />Project
+                    Management</label>
+                <label><input name="prefer" value="mobile-app-development" type="checkbox" class="input-checkbox" />Mobile
+                    App Development</label>
+                <label><input name="prefer" value="machine-learning" type="checkbox" class="input-checkbox" />Machine
+                    Learning/AI</label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="attribution">
+    <p>Project by <a href="https://www.freecodecamp.org/" target="-blank">FreeCodeCamp</a> Coded by
+        <a href="https://facebook.com/blessing.emejulu.33?refid=7" target="-blank">Emejulu Nneamaka Blessing</a>
+    </p></div>
+</body>
+
+</html>
